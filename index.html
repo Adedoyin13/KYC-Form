@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>KYC Form</title>
+</head>
+<body>
+
+    <main>
+
+        <header>
+            <h1>KYC Form</h1>
+        </header>
+
+        <form>
+            <p class="identity">
+                A. Identity Details.
+            </p>
+
+            <div>
+                <p>
+                    1. Name Of The Applicant.
+                </p>
+
+                <div class="form-group">
+                    <div>
+                        <input type="text" placeholder="John" required>
+                        <label for="">first Name</label>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Doe" required>
+                        <label for="">Last Name</label>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div>
+                <p>
+                    2. Name Of Father/Spouse.
+                </p>
+
+                <div class="form-group">
+                    <div>
+                        <input type="text" placeholder="John" required>
+                        <label for="">first Name</label>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Doe" required>
+                        <label for="">Last Name</label>
+                    </div>
+
+                </div>
+            </div>
+
+            <div>
+                <p>
+                    3. Date of Birth And Nationality.
+                </p>
+
+                <div class="form-group">
+                    <div>
+                        <input type="date" placeholder="John" required>
+                        <label for="">Date of Birth</label>
+                    </div>
+                    <div>
+                        <select name="" id="">
+                            <option value="--select--">--select--</option>
+                            <option value="--select--">--select--</option>
+                            <option value="--select--">--select--</option>
+                            <option value="--select--">--select--</option>
+                            <option value="--select--">--select--</option>
+                            <option value="--select--">--select--</option>
+                        </select>
+                        <label for="">Nationality</label>
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                
+                <div class="form-group">
+                    <div>
+                        <p>4. Status.</p>
+                     <label for="status-resident" class="--flex">
+                        <input type="radio" name="status" id="status-resident">
+                        Resident Individual
+                     </label>
+                     <label for="status-nonresident" class="--flex">
+                        <input type="radio" name="status" id="status-nonresident">
+                        Non-Resident Individual
+                     </label>
+                     <label for="status-foreign" class="--flex">
+                        <input type="radio" name="status" id="status-foreign">
+                        Foreign National
+                     </label>
+                    </div>
+
+                    <div>
+                        <p>5. Proof of identity.</p>
+                     <label for="passport" class="--flex">
+                        <input type="radio" name="identity" id="passport">
+                        Passport
+                     </label>
+                     <label for="voter" class="--flex">
+                        <input type="radio" name="identity" id="voter">
+                        Voter's ID
+                     </label>
+                     <label for="license" class="--flex">
+                        <input type="radio" name="identity" id="license">
+                        Driver's License
+                     </label>
+                     <label for="other" class="--flex">
+                        <input type="radio" name="identity" id="other">
+                        Other
+                     </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Address Details -->
+             <p class="identity">
+                B. Address Details
+             </p>
+
+            <div>
+             <p>
+             1. Address for correspondence.
+             </p>
+             <div class="form-group">
+                <div>
+                    <input type="text" placeholder="2, Ibadan Street">
+                    <label for="">Street Address Line 1</label>
+                </div>
+                <div>
+                    <input type="text" placeholder="2, Igbokofi Street">
+                    <label for="">Street Address Line 2</label>
+                </div>
+            </div>
+
+             <div class="form-group">
+                <div>
+                    <input type="text" placeholder="Lagos">
+                    <label for="">City</label>
+                </div>
+                <div>
+                    <input type="text" placeholder="Lagos">
+                    <label for="">State/Province</label>
+                </div>
+            </div>
+             </div>
+
+             <div>
+                <div class="form-group">
+                    <div>
+                        <input type="text" placeholder="234001">
+                        <label for="">Postal/Zip Code</label>
+                    </div>
+
+                    <div>
+                        <select name="" id="">
+                            <option value="&nbsp;">&nbsp;</option>
+                            <option value="nigeria">Nigeria</option>
+                            <option value="ghana">Ghania</option>
+                            <option value="kenya">Kanya</option>
+                        </select>
+                        <label for="">Country</label>
+                    </div>
+                </div>
+             </div>
+
+             <div>
+                <div class="form-group">
+                    <div>
+                        <input type="text" placeholder="08123456789">
+                        <label for="">Phone Number</label>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="yourname@gmail.com">
+                        <label for="">Email</label>
+                    </div>
+                </div>
+             </div>
+
+             <p class="identity">
+                C. File Upload
+                <span style="display: block; font-size: 10px;">
+                    Please upload related proof of identity that you choose only
+                </span>
+             </p>
+
+             <div>
+             <div class="file-input-wrapper">
+                <label for="" class="file-label">Browse Files</label>
+                <input type="file" id="fle-upload" class="file-input">
+             </div>
+             </div>
+
+             <div class="button-wrapper">
+                <buttton class="submit-button">
+                    Submit
+                </buttton>
+             </div>
+
+        </form>
+
+    </main>
+    
+</body>
+</html>
